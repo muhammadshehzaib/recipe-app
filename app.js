@@ -31,6 +31,7 @@ app.use(session({
 
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
+app.set("views", path.join(__dirname, "views"));
 
 // Home Route
 app.get('/', (req, res) => {
